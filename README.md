@@ -1,4 +1,5 @@
-#dht-crawler
+# dht-crawler
+
 Minimal BitTorrent crawler and scheduler with RethinkDB backend to **collect, analyse and store** peers.
 
 This crawler searches for peers of one or more torrents you define. Its core, forked from [Trrnts](https://github.com/Trrnts/Trrnts), searches for peers via the [DHT-Protocol](http://www.bittorrent.org/beps/bep_0005.html) and  sends ~4000 UDP packages per second. After, the crawler looks up the origin in a *GeoIP-database*, and stores it after.
